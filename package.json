@@ -1,6 +1,6 @@
 {
   "name": "@pencilfoxstudios/erasertail",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "type": "commonjs",
   "description": "A state-of-the-art smart logger for Pencil Fox Studios.",
   "main": "lib/index.js",
