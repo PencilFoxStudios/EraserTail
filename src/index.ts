@@ -145,7 +145,7 @@ export class EraserTailClient{
        
         if(!this.cloudEnabled) this.log("EraserTail Warn", "Cloud logging is disabled for this application!")
         process.on('uncaughtException', (err, origin) => {
-            this.log("Crash", err.message, `Origin: ${origin}\n${err}`)
+            this.log("Crash", err.message, `${origin}\n${err}\n${err.stack??"No Stack Present"}`)
     
             this.services.forEach((service:ET.ERASERTAIL_HEARTBEAT_SERVICE)=> {
                 this.updateService(service.SERVICE_NAME, "DOWN")
