@@ -1,2 +1,2 @@
 # EraserTail
-A state-of-the-art smart logger for Pencil Fox Studios.
+A smart logger for Pencil Fox Studios.
